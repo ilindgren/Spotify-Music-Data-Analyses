@@ -14,12 +14,14 @@ This project is separated into three jupyter notebooks:
 > - Multiple Linear Regression to predict what song would be popular in 2020
 > - Future Work
 <br/>
+
 2. Spotify API Gathering Data
 > - Defining functions to pull playlist data from my personal spotify account
 > - Manipulating the data into useful datasets containing the song features
 > - Visualizing the differences in the song features between playlists
 > - Exporting dataframes as excel .csv files
 <br/>
+
 3. My Spotify Mood
 > - Part 1: 
 > - Part 2:

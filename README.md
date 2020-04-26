@@ -6,35 +6,35 @@ The data used in these analyses was from two different sources. The top songs fr
 <br/><br/>
 This project is separated into three jupyter notebooks:
 
-1. Top Spotify Songs 2010-2019 Data Analysis 
-> - Business Understanding 
-> - Data Cleaning
-        - Removing irregular null values
-        - Removing duplicates
-        - consolidating genres
-> - Exploratory Data Analysis
-        - Matplotlib
-        - Seaborn
-        - Plotly
-> - Clustering Algorithms to make Ready-Made Playlists
-        - PCA
-        - K Means Clustering
-            - Elbow Plot
-            - Dendrogram
-        - Agglomerative Clustering
-        - DBScan
-        - Silhouette Score
-> - Hypothesis Testing
-        - Shapiro-Wilk Test
-        - Levene Test
-        - Welch's T-test
-        - Tukey Multiwise Comparison
-> - Multiple Linear Regression to predict what song would be popular in 2020
-        - K-Fold Cross Validation
-        - Ridge Regression
-        - Lasso Regression
-        - GridSearchCV
-        - K Nearest Neighbors
+1. Top Spotify Songs 2010-2019 Data Analysis <br/>
+> - Business Understanding <br/>
+> - Data Cleaning <br/>
+        - Removing irregular null values <br/>
+        - Removing duplicates <br/>
+        - consolidating genres <br/>
+> - Exploratory Data Analysis <br/>
+        - Matplotlib <br/>
+        - Seaborn <br/>
+        - Plotly <br/>
+> - Clustering Algorithms to make Ready-Made Playlists <br/>
+        - PCA <br/>
+        - K Means Clustering <br/>
+            - Elbow Plot <br/>
+            - Dendrogram <br/>
+        - Agglomerative Clustering <br/>
+        - DBScan <br/>
+        - Silhouette Score <br/>
+> - Hypothesis Testing <br/>
+        - Shapiro-Wilk Test <br/>
+        - Levene Test <br/>
+        - Welch's T-test <br/>
+        - Tukey Multiwise Comparison <br/>
+> - Multiple Linear Regression to predict what song would be popular in 2020 <br/>
+        - K-Fold Cross Validation <br/>
+        - Ridge Regression <br/>
+        - Lasso Regression <br/>
+        - GridSearchCV <br/>
+        - K Nearest Neighbors <br/>
 > - Future Work
 <br/>
 

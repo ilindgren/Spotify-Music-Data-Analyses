@@ -1,12 +1,17 @@
 # Spotify-Music-Data-Analyses
-
+## Background/Project Motivation <br/>
 Spotify is a digital music, podcast and video streaming service that has gained enormous popularity in recent years. It allows people to access millions of songs and other audio content from all over the world in one convenient service. 
 <br/><br/>
-The data used in these analyses was from two different sources. The top songs from 2010-2019 dataset was from Kaggle and the mood analyses dataset was taken using the spotify API. 
+## Data Sources <br/>
+**Kaggle**<br/>
+
+**Spotify**<br/>
+
 <br/><br/>
+## Table of Contents
 This project is separated into three jupyter notebooks:
 
-1. Top Spotify Songs 2010-2019 Data Analysis <br/>
+### 1. Top Spotify Songs 2010-2019 Data Analysis <br/>
 > - Business Understanding <br/>
 > - Data Cleaning <br/>
         - Removing irregular null values <br/>
@@ -38,26 +43,42 @@ This project is separated into three jupyter notebooks:
 > - Future Work
 <br/>
 
-2. Spotify API Gathering Data
-> - Defining functions to pull playlist data from my personal spotify account
-> - Manipulating the data into useful datasets containing the song features
-> - Visualizing the differences in the song features between playlists
-> - Exporting dataframes as excel .csv files
+### 2. Spotify API Gathering Data <br/>
+> - Defining functions to pull playlist data from my personal spotify account <br/>
+> - Manipulating the data into useful datasets containing the song features <br/>
+> - Visualizing the differences in the song features between playlists <br/>
+> - Exporting dataframes as excel .csv files <br/>
 <br/>
 
-3. My Spotify Mood
-> - Clustering songs into my personal moods
-        - K Means Clustering
-        - PCA
-        - t-SNE
-> - Machine Learning to Predict Mood Labels
-        - Random Forest Classifier
-        - K Nearest Neighbors Classifier
-        - Decision Tree Classifier
-        - XGBoost
-        - Support Vector Model
-        - Naive Bayes
-        - MLP Classifier (Neural Network)
+### 3. My Spotify Mood
+> - Clustering songs into my personal moods <br/>
+        - K Means Clustering <br/>
+        - PCA <br/>
+        - t-SNE <br/>
+> - Machine Learning to Predict My Personal Mood Labels <br/>
+        - Random Forest Classifier <br/>
+        - K Nearest Neighbors Classifier <br/>
+        - Decision Tree Classifier <br/>
+        - XGBoost <br/>
+        - Support Vector Model <br/>
+        - Naive Bayes <br/>
+        - MLP Classifier (Neural Network) <br/>
 <br/>
 
-Finally, the .pdf file is the presentation and notes prepared for key stakeholders. 
+## Technical Report 
+
+
+For cross-validation,the cluster labeled dataset was split into training and testing validation sets. For each classifier, confusion matrices and accuracies were used to calculate the success. 
+
+**Confusion Matrices**
+For a given classifier, a confusion matrix could be constructed. The confusion matrix is used to show the number of:
+
+True positives (TP): Track moods that the classifier labeled correctly
+True negatives (TN): Track moods that the classifier labeled as one of the other moods
+False positives (FP): Unrelated tweets that the classifier labeled as related
+False negatives (FN): Related tweets that the classifier labeled as unrelated
+
+**Accuracy**
+Accuracy determines out of all the classifications, how many did we classify correctly? This is represented as: <br/>
+Accuracy = (TP + TN) / (TP + TN + FP + FN)
+

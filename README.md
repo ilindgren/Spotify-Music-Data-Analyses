@@ -1,4 +1,5 @@
 # Spotify-Music-Data-Analyses
+<<<<<<< HEAD
 
 ## Background/Project Motivation <br/>
 Spotify is a digital music, podcast and video streaming service that has gained enormous popularity in recent years. It allows people to access millions of songs and other audio content from all over the world in one convenient service. 
@@ -10,10 +11,21 @@ The data used in these analyses was from two different sources:
 <br/>
 2. **Spotify** - My personal playlists: "Koala-ty Tunes", "Peaches", and "Rainy Days" obtained using the Spotify API. The code script is found in Notebook 2. "Spotify API Data Gathering" 
 <br/>
+=======
+## Background/Project Motivation <br/>
+Spotify is a digital music, podcast and video streaming service that has gained enormous popularity in recent years. It allows people to access millions of songs and other audio content from all over the world in one convenient service. 
+<br/><br/>
+## Data Sources <br/>
+**Kaggle**<br/>
+
+**Spotify**<br/>
+>>>>>>> 4c5475d37c274e747989091fe421fe7c97956306
 
 <br/><br/>
+## Table of Contents
 This project is separated into three jupyter notebooks:
 
+<<<<<<< HEAD
 1. **Top Spotify Songs 2010-2019 Data Analysis** 
 > **Business Understanding** <br/>
 > **Data Cleaning** <br/>
@@ -33,32 +45,73 @@ This project is separated into three jupyter notebooks:
         - DBScan <br/>
         - Silhouette Score <br/>
 > **Hypothesis Testing** <br/>
+=======
+### 1. Top Spotify Songs 2010-2019 Data Analysis <br/>
+> - Business Understanding <br/>
+> - Data Cleaning <br/>
+        - Removing irregular null values <br/>
+        - Removing duplicates <br/>
+        - consolidating genres <br/>
+> - Exploratory Data Analysis <br/>
+        - Matplotlib <br/>
+        - Seaborn <br/>
+        - Plotly <br/>
+> - Clustering Algorithms to make Ready-Made Playlists <br/>
+        - PCA <br/>
+        - K Means Clustering <br/>
+            - Elbow Plot <br/>
+            - Dendrogram <br/>
+        - Agglomerative Clustering <br/>
+        - DBScan <br/>
+        - Silhouette Score <br/>
+> - Hypothesis Testing <br/>
+>>>>>>> 4c5475d37c274e747989091fe421fe7c97956306
         - Shapiro-Wilk Test <br/>
         - Levene Test <br/>
         - Welch's T-test <br/>
         - Tukey Multiwise Comparison <br/>
+<<<<<<< HEAD
 > **Multiple Linear Regression** to predict what song would be popular in 2020 <br/>
+=======
+> - Multiple Linear Regression to predict what song would be popular in 2020 <br/>
+>>>>>>> 4c5475d37c274e747989091fe421fe7c97956306
         - K-Fold Cross Validation <br/>
         - Ridge Regression <br/>
         - Lasso Regression <br/>
         - GridSearchCV <br/>
         - K Nearest Neighbors <br/>
+<<<<<<< HEAD
 > **Future Work** <br/>
 <br/>
 
 2. **Spotify API Data Gathering** <br/>
+=======
+> - Future Work
+<br/>
+
+### 2. Spotify API Gathering Data <br/>
+>>>>>>> 4c5475d37c274e747989091fe421fe7c97956306
 > - Defining functions to pull playlist data from my personal spotify account <br/>
 > - Manipulating the data into useful datasets containing the song features <br/>
 > - Visualizing the differences in the song features between playlists <br/>
 > - Exporting dataframes as excel .csv files <br/>
 <br/>
 
+<<<<<<< HEAD
 3. **My Spotify Mood** <br/>
 > **Clustering songs into my personal moods** <br/>
         - K Means Clustering <br/>
         - PCA <br/>
         - t-SNE <br/>
 > **Machine Learning to Predict Mood Labels** <br/>
+=======
+### 3. My Spotify Mood
+> - Clustering songs into my personal moods <br/>
+        - K Means Clustering <br/>
+        - PCA <br/>
+        - t-SNE <br/>
+> - Machine Learning to Predict My Personal Mood Labels <br/>
+>>>>>>> 4c5475d37c274e747989091fe421fe7c97956306
         - Random Forest Classifier <br/>
         - K Nearest Neighbors Classifier <br/>
         - Decision Tree Classifier <br/>
@@ -70,6 +123,7 @@ This project is separated into three jupyter notebooks:
 
 ## Technical Report 
 
+<<<<<<< HEAD
 ### EDA
 Using matplotlib and plotly we explored the relationships between the individual song features. Analysis included:
 1. Profile Report of the Kaggle dataset <br/>
@@ -153,10 +207,23 @@ For cross-validation, the cluster labeled dataset was split into training and te
 <br/>
 **Confusion Matrices**
 For a given classifier, a confusion matrix could be constructed. The confusion matrix is used to show the number of True Positives (TP), True Negatives (TN), False Positives (FP) and False Negatives (FN). <br/>
+=======
+
+For cross-validation,the cluster labeled dataset was split into training and testing validation sets. For each classifier, confusion matrices and accuracies were used to calculate the success. 
+
+**Confusion Matrices**
+For a given classifier, a confusion matrix could be constructed. The confusion matrix is used to show the number of:
+
+True positives (TP): Track moods that the classifier labeled correctly
+True negatives (TN): Track moods that the classifier labeled as one of the other moods
+False positives (FP): Unrelated tweets that the classifier labeled as related
+False negatives (FN): Related tweets that the classifier labeled as unrelated
+>>>>>>> 4c5475d37c274e747989091fe421fe7c97956306
 
 **Accuracy**
 Accuracy determines out of all the classifications, how many did we classify correctly? This is represented as: <br/>
 Accuracy = (TP + TN) / (TP + TN + FP + FN)
+<<<<<<< HEAD
 <br/>
 
 ### Business Recommendations:
@@ -168,4 +235,6 @@ Accuracy = (TP + TN) / (TP + TN + FP + FN)
 - Time Series analyses to see what genres are growing in popularity.<br/>
 - Include Artist popularity ranking and social media presence in the data.<br/>
 - Create a neural network that would recommend songs and continually recommend relevant content as the users' taste changes over time. <br/>
+=======
+>>>>>>> 4c5475d37c274e747989091fe421fe7c97956306
 

@@ -108,9 +108,10 @@ We used three different clustering algorithms for our Top Popular Songs dataset.
 <br/>
 To determine the success of each clustering algorithm we used the silhouette score. Wikipedia describes the silhouette score as a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. 
 
-
+### K Means Clusters using Data with all Subgenres
 ![](KMeans_TopSpotifySongs.PNG) 
-
+<br/>
+### DBScan Clusters using Data with all Subgenres
 ![](Dbscan_Clusters_TopSpotifySongs.PNG) 
 <br/>
 
@@ -143,6 +144,7 @@ We found that the track features that would most popular in 2020 are features si
 ### Data Gathering using Spotify API
 I specified songs that were different moods so I could get a wide variety of song features. <br/>
 
+### Song Features of my Personal Playlists
 ![](playlist_comp_2.png)
 
 I transformed the data into a useable dataset that I saved into a .csv file for analysis in notebook 3. <br/>
@@ -152,6 +154,7 @@ Music is a medium that conveys emotion or a mood. People usually listen to songs
 
 For cross-validation, the cluster labeled dataset was split into training and testing validation sets. For each classifier, confusion matrices and accuracies were used to calculate the success. We also looked at the feature importances of the continuous variables we used in our model. Energy, Valence and Tempo were dropped from our features due to data leakage in our model. <br/>
 
+###  Accuracies of Machine Learning Algorithms
 ![](Model_Accuracies_PersonalSpotifyData.PNG)
 
 <br/>

@@ -109,9 +109,9 @@ We used three different clustering algorithms for our Top Popular Songs dataset.
 To determine the success of each clustering algorithm we used the silhouette score. Wikipedia describes the silhouette score as a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. 
 
 
-![](KMeans_TopSpotifySongs.png) 
+![](KMeans_TopSpotifySongs.PNG) 
 
-![](Dbscan_Clusters_TopSpotifySongs.png) 
+![](Dbscan_Clusters_TopSpotifySongs.PNG) 
 <br/>
 
 Each cluster label was its own playlist. By clustering songs with similar attributes together, we can get a better understanding of our users' music choice. If a user tends to have a preference for the 'signature sounds' of one cluster, we can recommend similar songs in order to keep the user engaged and improve their overall experience with our platform. <br/>
@@ -152,7 +152,7 @@ Music is a medium that conveys emotion or a mood. People usually listen to songs
 
 For cross-validation, the cluster labeled dataset was split into training and testing validation sets. For each classifier, confusion matrices and accuracies were used to calculate the success. We also looked at the feature importances of the continuous variables we used in our model. Energy, Valence and Tempo were dropped from our features due to data leakage in our model. <br/>
 
-![](Model_Accuracies_PersonalSpotifyData.png)
+![](Model_Accuracies_PersonalSpotifyData.PNG)
 
 <br/>
 

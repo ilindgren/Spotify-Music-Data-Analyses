@@ -7,15 +7,15 @@ Spotify is a digital music, podcast and video streaming service that has gained 
 
 ## Data Sources <br/>
 The data used in these analyses was from two different sources:
-1. **Kaggle** - 'Top Spotify Songs from 2010-2019 by year' link: https://www.kaggle.com/leonardopena/top-spotify-songs-from-20102019-by-year
-<br/>
-2. **Spotify** - My personal playlists: "Koala-ty Tunes", "Peaches", and "Rainy Days" obtained using the Spotify API. The code script is found in Notebook 2. "Spotify API Data Gathering" 
+  1. **Kaggle** - 'Top Spotify Songs from 2010-2019 by year' link: https://www.kaggle.com/leonardopena/top-spotify-songs-from-20102019-by-year
+<br/><br/>
+  2. **Spotify** - My personal playlists: "Koala-ty Tunes", "Peaches", and "Rainy Days" obtained using the Spotify API. The code script is found in Notebook 2. "Spotify API Data Gathering" 
 <br/><br/>
 
 ## Table of Contents
 This project is separated into three jupyter notebooks:
 
-1. **Top Spotify Songs 2010-2019 Data Analysis** 
+### 1. Top Spotify Songs 2010-2019 Data Analysis <br/>
 > **Business Understanding** <br/>
 > **Data Cleaning** <br/>
         - Removing irregular null values <br/>
@@ -28,40 +28,17 @@ This project is separated into three jupyter notebooks:
 > **Clustering Algorithms to make Ready-Made Playlists** <br/>
         - PCA <br/>
         - K Means Clustering <br/>
-          - Elbow Plot <br/>
-          - Dendrogram <br/>
-        - Agglomerative Clustering <br/>
-        - DBScan <br/>
-        - Silhouette Score <br/>
-> **Hypothesis Testing** <br/>
-
-### 1. Top Spotify Songs 2010-2019 Data Analysis <br/>
-> - Business Understanding <br/>
-> - Data Cleaning <br/>
-        - Removing irregular null values <br/>
-        - Removing duplicates <br/>
-        - consolidating genres <br/>
-> - Exploratory Data Analysis <br/>
-        - Matplotlib <br/>
-        - Seaborn <br/>
-        - Plotly <br/>
-> - Clustering Algorithms to make Ready-Made Playlists <br/>
-        - PCA <br/>
-        - K Means Clustering <br/>
             - Elbow Plot <br/>
             - Dendrogram <br/>
         - Agglomerative Clustering <br/>
         - DBScan <br/>
         - Silhouette Score <br/>
-> - Hypothesis Testing <br/>
+> **Hypothesis Testing** <br/>
         - Shapiro-Wilk Test <br/>
         - Levene Test <br/>
         - Welch's T-test <br/>
         - Tukey Multiwise Comparison <br/>
-
-> **Multiple Linear Regression** to predict what song would be popular in 2020 <br/>
-
-> - Multiple Linear Regression to predict what song would be popular in 2020 <br/>
+> **Multiple Linear Regression to predict what song would be popular in 2020** <br/>
         - K-Fold Cross Validation <br/>
         - Ridge Regression <br/>
         - Lasso Regression <br/>
@@ -77,19 +54,13 @@ This project is separated into three jupyter notebooks:
 > - Exporting dataframes as excel .csv files <br/>
 <br/>
 
-3. **My Spotify Mood** <br/>
+
+### 3. My Spotify Mood
 > **Clustering songs into my personal moods** <br/>
         - K Means Clustering <br/>
         - PCA <br/>
         - t-SNE <br/>
-> **Machine Learning to Predict Mood Labels** <br/>
-
-### 3. My Spotify Mood
-> - Clustering songs into my personal moods <br/>
-        - K Means Clustering <br/>
-        - PCA <br/>
-        - t-SNE <br/>
-> - Machine Learning to Predict My Personal Mood Labels <br/>
+> **Machine Learning to Predict My Personal Mood Labels** <br/>
         - Random Forest Classifier <br/>
         - K Nearest Neighbors Classifier <br/>
         - Decision Tree Classifier <br/>
@@ -135,12 +106,13 @@ We used three different clustering algorithms for our Top Popular Songs dataset.
 <br/>
 **Agglomerative Clustering** is a bottom-up hierarchal algorithm. Bottom-up algorithms treat each document as a singleton cluster at the outset and then successively merge (or agglomerate) pairs of clusters until all clusters have been merged into a single cluster that contains all documents.<br/>
 <br/>
-To determine the success of each clustering algorithm we used the silhouette score. Wikipedia describes the silhouette score as a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. <br/>
-<br/>
+To determine the success of each clustering algorithm we used the silhouette score. Wikipedia describes the silhouette score as a measure of how similar an object is to its own cluster (cohesion) compared to other clusters (separation). The silhouette ranges from −1 to +1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. 
+
 
 ![](KMeans_TopSpotifySongs.png) 
 
 ![](Dbscan_Clusters_TopSpotifySongs.png) 
+<br/>
 
 Each cluster label was its own playlist. By clustering songs with similar attributes together, we can get a better understanding of our users' music choice. If a user tends to have a preference for the 'signature sounds' of one cluster, we can recommend similar songs in order to keep the user engaged and improve their overall experience with our platform. <br/>
 <br/>
@@ -190,11 +162,9 @@ For cross-validation,the cluster labeled dataset was split into training and tes
 For a given classifier, a confusion matrix could be constructed. The confusion matrix is used to show the number of True positives (TP), True negatives (TN), False positives (FP), False negatives (FN).<br/>
 <br/>
 **Accuracy**
-Accuracy determines out of all the classifications, how many did we classify correctly? This is represented as: <br/>
+Accuracy determines out of all the classifications, how many did we classify correctly? This is represented as: <br/><br/>
 Accuracy = (TP + TN) / (TP + TN + FP + FN)
-
 <br/>
-
 ### Business Recommendations:
 - Create ready-made playlists based on the users' personal preferences.<br/>
 - Provide Song Recommendations that are similar to the users' current songs.<br/>

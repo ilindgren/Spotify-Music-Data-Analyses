@@ -2,7 +2,13 @@
 
 
 ## Background/Project Motivation <br/>
-Spotify is a digital music, podcast and video streaming service that has gained enormous popularity in recent years. It allows people to access millions of songs and other audio content from all over the world in one convenient service. 
+Spotify is a digital music, podcast and video streaming service that has gained enormous popularity in recent years. It allows people to access millions of songs and other audio content from all over the world in one convenient service. Users are able to browse an incredible variety of tracks by artist, album, or genre and can create, edit and share playlists. Spotify currently has about 248 million monthly active users and 113 million subscribers, with its paid user base growing around 31% each year. 
+<br/><br/>
+I approached this project as a Spotify Data Scientist and our main objective as such is to figure out: 
+> **How can we provide a unique and exceptional listening experience to our users?**
+
+In order to answer that question, we need to gain a better understanding of the music choices of our current users so we can optimize our platform to not only expose our users to new content, but content they would actually be interested in. We are looking to gain Premium (paying) users and retain them for the long term. 
+
 <br/><br/>
 
 ## Data Sources <br/>
